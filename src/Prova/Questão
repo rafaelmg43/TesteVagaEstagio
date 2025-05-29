@@ -1,0 +1,29 @@
+você comprou um novo laptop gamer e gosta de jogar nele o dia todo.Devido ao alto uso de gráficos ele precisa ser carregado frequentemente. Agora você quer saber quanta bateria restara após uma sequencia de eventos de uso e carregamento.
+Problema:
+escreva uma função que recebe n registro representando o consumo de bateria e os eventos de carregamento.
+  um valor positivo indica minutos carregando o laptop
+  UM VALOR NEGATIVO INDICA minutos jogando(o laptop consome 1% de bateria por minuto)
+  a bateria não pode ultrapassar 100%.
+  a carga inicial é 50%.
+ Afunção deve retornar a porcentagem final da bateria após todos os eventos.
+Exewmplo
+Entrada
+n=4
+eventos=[10,-20,61,16]
+
+  processo
+1. carga inicial 50%.
+2. Evento[0]  ->10minutos -> 50%-10%=60%
+3. Evento[1] ->20minutos jogando -> 60% -20% = 40%
+4. Evento[2]  ->61minutos carregando -> 40% + 61% = 100%(limite maximo)
+5. Evento[3]  ->15minutos jogando ->100% -15% = 85%
+
+saída esperada:
+85
+
+Descrição da função:
+Complete a função getBattery, que deve retornar um numero inteiro representando a porcentagem final da bateria.
+
+Parâmetros:
+ eventos:uma lista de n números inteiros, onde cada elemento representa um eventode carregamento(+) ou consumo de bateria (-).
+exemplo: eventos[eventos[0],... enventos{a-1}] uma matriz de números inteiros
